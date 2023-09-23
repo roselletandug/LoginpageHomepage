@@ -1,0 +1,104 @@
+body{
+	
+align-items: center;
+display: flex;
+height: 100vh;
+flex-direction: column;
+background-color: #f0f0f0;
+background: url(scenery1.jpg);;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    }
+*{
+font-family: sans-serif; 
+box-sizing: border-box;
+align-items: center;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 40px;
+     font-family:'Lora', cursive;
+     align-items: center;
+
+}
+form {
+float: right;
+width: 1000px;
+border: 2px solid Lightgoldenrodyellow; 
+padding: 30px;
+background: goldenrod;
+border-radius: 15px;
+
+}
+h2{
+text-align: center; 
+margin-bottom: 40px;
+}
+h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+}
+input {
+	display: block;
+	border: 2px solid #brownx;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+label{
+	color: whitesmoke;
+	font-size: 18px;
+	padding: 10px;
+}
+button{
+	float: right;
+	background: white(255, 150, 50, 1.0);
+	padding: 30px 30px;
+	color: darkred;
+	border-radius: 20px;
+	margin-right: 2px;
+	border: round(10, 10, 10);
+	box-align: center;
+}
+
+button:hover{
+	opacity: .7;
+}
+
+p {
+	justify-content: center;
+}
+p id{
+	color: white;
+}
+.ca{
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+.ca:hover{
+	text-decoration: underline;
+}
+.div1 {
+	float: right;
+	width: 500px;
+	border: 2px ;
+	padding: 30px;
+	border-radius: 15px;
+	background color: lightgoldenrodyellow;
+}
+input[type="text" i] {
+	padding-block: 20px;
+    padding-inline: 20px;
+}
+select{
+    padding: 20px 20px;
+    font-size: 20px;
+}

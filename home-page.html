@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>javascript: calculate two numbers</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home-page.css">
+</head>
+<script>
+    function logout(){
+        let response = confirm("are you sure you want to log out?");
+        
+        if(response){
+
+
+            window.close('home.html');
+            window.open('index.html');
+        }
+    }
+</script>
+</body>
+      <h1 style="color:white;">WELCOME TO MATHEMATICAL WORLD</h1>
+
+      <button type ="submit" onclick="logout()">Logout </button>
+
+      <br>
+      <br>
+
+
+      <div class="home-page-container">
+        <h1 style="color:white;">Mathematical Variables</h1>
+
+        
+        <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        
+        <input type="text" id="n1" placeholder="1st Number">/><br/><br/>
+        <input type="text" id="n2" placeholder="2nd Number">/><br/><br/>
+        <div class="home-page-container">
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
+        <button onclick="calc()">=</button>
+        <input type="text" id="result" placeholder="Result">
+        
+    </body>
+</html>
